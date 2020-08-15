@@ -1,0 +1,252 @@
+{
+	"id": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+	"name": "SERVICE_CIS_API",
+	"description": "",
+	"order": [
+		"e1f1910f-eaa5-8760-3cee-b15cf101d88e",
+		"1981e0d9-323f-4e5c-67d5-32d46d7632d8",
+		"5d500350-fa10-4b73-2cbb-371b4d7d96af",
+		"da3fe869-e225-542d-828d-38582bb0f0cd",
+		"44352fb6-9f14-c65e-9a97-fd1315923a70",
+		"f02dfb8d-361e-7f3d-70a4-6a531452abb6",
+		"a3edcfa4-1e7f-32f7-5fec-c1a68f1d8d3a",
+		"dbfea1f7-c3ad-5f11-e892-47569bc9d01a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "2657114",
+	"public": false,
+	"requests": [
+		{
+			"id": "1981e0d9-323f-4e5c-67d5-32d46d7632d8",
+			"name": "Update(Max Parameter)",
+			"description": "",
+			"collectionId": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nAuthorization: Basic YWRtaW46YWRtaW4= ",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n\t\"mainMenuSMSCode\": \"8407 DTEST\",\r\n\t\"deprovisioningFailureText\": \"\",\r\n\t\"ussdFulfillmentConfirmationTextSMS\": \"Success!!!\" ,\r\n\t\"isBalanceEnquiry\": \"NO\",\r\n\t\"mainMenuPriority\": \"\",\r\n\t\"deprovisioningSuccessText\": \"\",\r\n\t\"validityPeriod\": \"30\",\r\n\t\"dmCode\": \"\",\r\n\t\"spSplitProductBuy\": \"\",\r\n\t\"type\": \"SMS\",\r\n\t\"subMenuSMSPriority\": \"1\",\r\n\t\"recurringTimes\": \"1\",\r\n\t\"productDisplayNameOnUSSD\": \"\",\r\n\t\"loyaltyPoints\": \"0\",\r\n\t\"discountType\": \"\",\r\n\t\"retryLimit\": \"3\",\r\n\t\"productRootNodeSMSCode\": \"8407\",\r\n\t\"subSubSubMenuHeader\": \"\",\r\n\t\"createdDate\": \"14/06/2018 10:55:58\",\r\n\t\"subSubSubMenuUSSDCode\": \"\",\r\n\t\"idValue\": \"736\",\r\n\t\"recurringUnit\": \"Days\",\r\n\t\"configureProductOnWEB\": \"NO\",\r\n\t\"subSubMenuUSSDCode\": \"\",\r\n\t\"additionalCharging\": \"0\",\r\n\t\"subSubMenuSMSPriority\": \"1\",\r\n\t\"gracePeriod\": \"99\",\r\n\t\"dmProductAction\": \"PRODUCT_BUY\",\r\n\t\"amtForToolbar\": \"1000\",\r\n\t\"subMenuHeader\": \"\",\r\n\t\"subSubMenuSMSCode\": \"8407 DTEST DTEST1 DTEST2\",\r\n\t\"deprovisioningConfirmationTextZeroCharging\": \"\",\r\n\t\"recurringType\": \"RS\",\r\n\t\"subSubSubMenuSMSPriority\": \"1\",\r\n\t\"amtForSmartApp\": \"1000\",\r\n\t\"subMenuSMSCode\": \"8407 DTEST DTEST1\",\r\n\t\"isSplit\": \"TRUE\",\r\n\t\"subSubMenuHeader\": \"\",\r\n\t\"isRecurring\": \"false\",\r\n\t\"ussdProductPriority\": \"\",\r\n\t\"productRootNodeSMSName\": \"8407\",\r\n\t\"subMenuUSSDCode\": \"\",\r\n\t\"configureProductOnSMS\": \"YES\",\r\n\t\"spRecurringProductBuy\": \"\",\r\n\t\"spDeprovisionProduct\": \"\",\r\n\t\"subSubMenuSMSHeader\": \"DTEST2\",\r\n\t\"subMenuPriority\": \"\",\r\n\t\"amtForSMS\": \"1000\",\r\n\t\"spCommand\": \"searchBillingReserveCredit || searchreserve\\r\\n\",\r\n\t\"amtForOthers\": \"1000\",\r\n\t\"configureProductOnUSSD\": \"NO\",\r\n\t\"productRootNodeUSSDCode\": \"\",\r\n\t\"buyForOthers\": \"TRUE\",\r\n\t\"confirmationTextSMSNonZero\": \"\",\r\n\t\"webChannelType\": \"\",\r\n\t\"amtForSelfCare\": \"1000\",\r\n\t\"subSubSubMenuPriority\": \"\",\r\n\t\"mainMenuUSSDCode\": \"\",\r\n\t\"discountValue\": \"0\",\r\n\t\"productRootNodeName\": \"\",\r\n\t\"defaultCharging\": \"AIR\",\r\n\t\"subSubMenuPriority\": \"\",\r\n\t\"amtForFlyTxt\": \"1213\",\r\n\t\"amtForEVDS\": \"1000\",\r\n\t\"validityUnit\": \"Days\",\r\n\t\"partialCharging\": \"FALSE\",\r\n\t\"subMenuSMSHeader\": \"DTEST1\",\r\n\t\"productDisplayNameOnWEB\": \"\",\r\n\t\"subSubSubMenuSMSCode\": \"\",\r\n\t\"subSubSubMenuSMSHeader\": \"\",\r\n\t\"amtForCRM\": \"1000\",\r\n\t\"confirmationTextSMSZero\": \"\",\r\n\t\"pamID\": \"PAM41\",\r\n\t\"chargingVia\": \"AIR,MobileMoney,\",\r\n\t\"amtForUSSD\": \"7676\",\r\n\t\"chargingFromMain\": \"TRUE\",\r\n\t\"deprovisioningUssdFulfillmentConfirmationTextSMS\": \"\",\r\n\t\"spProductBuy\": \"SendToSMSCOverSMPP\",\r\n\t\"spStepName\":\"STP\",\r\n\t\"chargingFromDA\": \"\",\r\n\t\"mainMenuSMSPriority\": \"7\",\r\n\t\"recurringParam\": \"21\",\r\n\t\"mainMenuHeader\": \"\",\r\n\t\"sendToSMS\": \"TRUE\",\r\n\t\"productName\": \"API_Test37_updated\",\r\n\t\"mainMenuSMSHeader\": \"DTEST\",\r\n\t\"productSMSCode\":\"8407 DTEST DTEST1 DTEST2|DM41\",\r\n\t\"smsProductPriority\":\"1\",\r\n\t\"productDisplayNameOnSMS\":\"Dial9835\",\r\n\t\"secondLangProductDisplayNameOnSMS\":\"Dial9835FR\",\r\n\t\"spSuccessIsSupress\":\"\",\r\n\t\"spFailureIsSupress\":\"\",\r\n\t\"description\":\"Hi\",\r\n\t\"doubleConfirmation\":\"true\",\r\n\t\r\n\t\"successText\": \"SuccessText API_Test37_updated\",\r\n\t\"secondLangSuccessText\":\"SecondLangSuccess TextAPI_Test37_updated\",\r\n\t\"failureText\": \"Failure in Buying API_Test37_updated\",\r\n\t\"secondLangFailureText\":\"SecondLangFailureText API_Test37_updated\"\r\n\t\r\n}",
+			"url": "http://localhost:8380/cisCircle/api/product",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4= ",
+					"description": ""
+				}
+			],
+			"collection_id": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca"
+		},
+		{
+			"id": "44352fb6-9f14-c65e-9a97-fd1315923a70",
+			"name": "Create(Min parameter)",
+			"description": "Create",
+			"collectionId": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Basic YWRtaW46YWRtaW4=",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n\t\"productName\": \"CPTEST75\",\t\r\n\t\"type\": \"SMS\",\r\n\t\"validityPeriod\": \"30\",\t\r\n\t\"validityUnit\": \"Days\",\r\n\t\"loyaltyPoints\": \"0\",\r\n\t\"expiryDate\":\"12/12/2019 00:00:00\",\r\n\t\r\n\t\"isRecurring\": \"false\",\r\n\t\"recurringType\": \"RS\",\r\n\t\"recurringTimes\": \"3\",\t\r\n\t\"recurringUnit\": \"days\",\r\n\t\"gracePeriod\": \"99\",\r\n\t\"recurringParam\": \"21\",\r\n\t\"retryLimit\": \"3\",\t\r\n\t\r\n\t\"successText\": \"SuccessText API_Test68@CP75\",\r\n\t\"secondLangSuccessText\":\"SecondLangSuccess TextAPI_Test68@CP75\",\r\n\t\"failureText\": \"Failure in Buying API_Test68@CP75\",\r\n\t\"secondLangFailureText\":\"SecondLangFailureText API_Test68@CP75\",\r\n\t\r\n\t\"productSMSCode\":\"8491 |CP75\",\r\n\t\r\n\t\"productDisplayNameOnSMS\":\"Dial9835\",\r\n\t\"secondLangProductDisplayNameOnSMS\":\"Dial9835FR\",\r\n\t\r\n\t\"cpName\":\"CPTWO\",\r\n\t\"chargingType\":\"MO\",\r\n\t\"serviceMode\":\"Normal\",\r\n\t\"chargingDetails\":[\r\n\t\t{\r\n\t\t  \"amount\":\"30\",\r\n\t\t  \"chargeCode\":\"CC30d2\",\r\n\t\t  \"priority\":\"High\",\r\n\t\t  \"operationType\":\"3\"\r\n\t\t}\r\n\t]\r\n\t\r\n\t\r\n}",
+			"url": "http://10.155.215.160:8380/cisCircle/api/product",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": ""
+				}
+			],
+			"collection_id": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca"
+		},
+		{
+			"id": "5d500350-fa10-4b73-2cbb-371b4d7d96af",
+			"name": "GET",
+			"description": "Get product by id",
+			"collectionId": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+			"method": "GET",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=",
+			"data": [],
+			"rawModeData": "",
+			"pathVariables": {},
+			"url": "http://10.155.215.160:8380/cisCircle/api/product?productId=929",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "productId",
+					"value": "929",
+					"equals": true,
+					"description": ""
+				}
+			],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": ""
+				}
+			],
+			"collection_id": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca"
+		},
+		{
+			"id": "a3edcfa4-1e7f-32f7-5fec-c1a68f1d8d3a",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+			"data": null,
+			"dataMode": "params",
+			"name": "GetCISAgreement",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1543297362643,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "da3fe869-e225-542d-828d-38582bb0f0cd",
+			"name": "Update Status",
+			"description": "",
+			"collectionId": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+			"method": "PUT",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4= ",
+			"data": [],
+			"rawModeData": "",
+			"pathVariables": {},
+			"url": "http://10.155.215.160:8380/cisCircle/api/product/status?productId=930&status=ACTIVE",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "productId",
+					"value": "930",
+					"equals": true,
+					"description": ""
+				},
+				{
+					"key": "status",
+					"value": "ACTIVE",
+					"equals": true,
+					"description": ""
+				}
+			],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4= ",
+					"description": ""
+				}
+			],
+			"collection_id": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca"
+		},
+		{
+			"id": "dbfea1f7-c3ad-5f11-e892-47569bc9d01a",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+			"data": null,
+			"dataMode": "params",
+			"name": "GetSmSCFromCis",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1543471122359,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e1f1910f-eaa5-8760-3cee-b15cf101d88e",
+			"name": "Create(Max Parameter)",
+			"description": "Create",
+			"collectionId": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nAuthorization: Basic YWRtaW46YWRtaW4= \n// : ",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n\t\"mainMenuSMSCode\": \"8407 DTEST\",\r\n\t\"deprovisioningFailureText\": \"\",\r\n\t\"ussdFulfillmentConfirmationTextSMS\": \"Success!!!\" ,\r\n\t\"isBalanceEnquiry\": \"NO\",\r\n\t\"mainMenuPriority\": \"\",\r\n\t\"deprovisioningSuccessText\": \"\",\r\n\t\"validityPeriod\": \"30\",\r\n\t\"dmCode\": \"\",\r\n\t\"spSplitProductBuy\": \"\",\r\n\t\"type\": \"SMS\",\r\n\t\"subMenuSMSPriority\": \"1\",\r\n\t\"recurringTimes\": \"1\",\r\n\t\"productDisplayNameOnUSSD\": \"\",\r\n\t\"loyaltyPoints\": \"0\",\r\n\t\"discountType\": \"\",\r\n\t\"retryLimit\": \"3\",\r\n\t\"productRootNodeSMSCode\": \"8407\",\r\n\t\"subSubSubMenuHeader\": \"\",\r\n\t\"createdDate\": \"14/06/2018 10:55:58\",\r\n\t\"subSubSubMenuUSSDCode\": \"\",\r\n\t\"idValue\": \"718\",\r\n\t\"recurringUnit\": \"Days\",\r\n\t\"configureProductOnWEB\": \"\",\r\n\t\"subSubMenuUSSDCode\": \"\",\r\n\t\"additionalCharging\": \"0\",\r\n\t\"successText\": \"SuccessText API_Test_31\",\r\n\t\"secondLangSuccessText\":\"SecondLangSuccess TextAPI_Test_31\",\r\n\t\"subSubMenuSMSPriority\": \"1\",\r\n\t\"gracePeriod\": \"99\",\r\n\t\"failureText\": \"Failure in Buying API_Test_31\",\r\n\t\"secondLangFailureText\":\"SecondLangFailureText API_Test_31\",\r\n\t\"dmProductAction\": \"PRODUCT_BUY\",\r\n\t\"amtForToolbar\": \"1000\",\r\n\t\"subMenuHeader\": \"\",\r\n\t\"subSubMenuSMSCode\":  \"8407 DTEST DTEST1 DTEST2\",\r\n\t\"deprovisioningConfirmationTextZeroCharging\": \"\",\r\n\t\"recurringType\": \"RS\",\r\n\t\"subSubSubMenuSMSPriority\": \"1\",\r\n\t\"amtForSmartApp\": \"1000\",\r\n\t\"subMenuSMSCode\": \"8407 DTEST DTEST1\",\r\n\t\"isSplit\": \"TRUE\",\r\n\t\"subSubMenuHeader\": \"\",\r\n\t\"isRecurring\": \"true\",\r\n\t\"ussdProductPriority\": \"\",\r\n\t\"productRootNodeSMSName\": \"8407\",\r\n\t\"subMenuUSSDCode\": \"\",\r\n\t\"configureProductOnSMS\": \"YES\",\r\n\t\"spRecurringProductBuy\": \"\",\r\n\t\"spDeprovisionProduct\": \"\",\r\n\t\"subSubMenuSMSHeader\": \"DTEST2\",\r\n\t\"subMenuPriority\": \"\",\r\n\t\"amtForSMS\": \"1000\",\r\n\t\"spCommand\": \"\",\r\n\t\"amtForOthers\": \"1000\",\r\n\t\"configureProductOnUSSD\": \"NO\",\r\n\t\"productRootNodeUSSDCode\": \"\",\r\n\t\"buyForOthers\": \"TRUE\",\r\n\t\"confirmationTextSMSNonZero\": \"\",\r\n\t\"webChannelType\": \"\",\r\n\t\"amtForSelfCare\": \"1000\",\r\n\t\"subSubSubMenuPriority\": \"\",\r\n\t\"mainMenuUSSDCode\": \"\",\r\n\t\"discountValue\": \"0\",\r\n\t\"productRootNodeName\": \"\",\r\n\t\"defaultCharging\": \"AIR\",\r\n\t\"subSubMenuPriority\": \"\",\r\n\t\"amtForFlyTxt\": \"1213\",\r\n\t\"amtForEVDS\": \"1000\",\r\n\t\"validityUnit\": \"Days\",\r\n\t\"partialCharging\": \"\",\r\n\t\"subMenuSMSHeader\": \"DTEST1\",\r\n\t\"productDisplayNameOnWEB\": \"\",\r\n\t\"subSubSubMenuSMSCode\": \"\",\r\n\t\"subSubSubMenuSMSHeader\": \"\",\r\n\t\"amtForCRM\": \"1000\",\r\n\t\"confirmationTextSMSZero\": \"\",\r\n\t\"pamID\": \"PAM41\",\r\n\t\"chargingVia\": \"AIR,MobileMoney,\",\r\n\t\"amtForUSSD\": \"7676\",\r\n\t\"chargingFromMain\": \"TRUE\",\r\n\t\"deprovisioningUssdFulfillmentConfirmationTextSMS\": \"\",\r\n\t\"spProductBuy\": \"SendToSMSCOverSMPP\",\r\n\t\"spStepName\":\"STP\",\r\n\t\"chargingFromDA\": \"\",\r\n\t\"mainMenuSMSPriority\": \"7\",\r\n\t\"recurringParam\": \"21\",\r\n\t\"mainMenuHeader\": \"\",\r\n\t\"sendToSMS\": \"TRUE\",\r\n\t\"productName\": \"\",\r\n\t\"mainMenuSMSHeader\": \"DTEST\",\r\n\t\"productSMSCode\":\"8407 DTEST DTEST1 DTEST2|DM28\",\r\n\t\"smsProductPriority\":\"1\",\r\n\t\"productDisplayNameOnSMS\":\"Dial9835\",\r\n\t\"secondLangProductDisplayNameOnSMS\":\"Dial9835FR\",\r\n\t\"spSuccessIsSupress\":\"true\",\r\n\t\"spFailureIsSupress\":\"\",\r\n\t\"description\":\"Hi\",\r\n\t\"doubleConfirmation\":\"true\"\r\n\t\r\n}",
+			"url": "http://localhost:8380/cisCircle/api/product",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4= ",
+					"description": ""
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"collection_id": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca"
+		},
+		{
+			"id": "f02dfb8d-361e-7f3d-70a4-6a531452abb6",
+			"name": "Update copy(Min Parameter)",
+			"description": "",
+			"collectionId": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nAuthorization: Basic YWRtaW46YWRtaW4=",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n\t\"idValue\":\"930\",\r\n\t\"productName\": \"CPTEST75_updated\",\t\r\n\t\"type\": \"SMS\",\r\n\t\"validityPeriod\": \"30\",\t\r\n\t\"validityUnit\": \"Days\",\r\n\t\"amtForSMS\": \"42\",\r\n\t\"loyaltyPoints\": \"0\",\r\n\t\"amtForFlyTxt\": \"1213\",\r\n\t\"expiryDate\":\"30/09/2019 00:00:00\",\r\n\t\r\n\t\"isRecurring\": \"false\",\r\n\t\"recurringType\": \"RS\",\r\n\t\"recurringTimes\": \"3\",\t\r\n\t\"recurringUnit\": \"days\",\t\r\n\t\"retryLimit\": \"3\",\t\r\n\t\"gracePeriod\": \"99\",\r\n\t\"recurringParam\": \"21\",\r\n\t\r\n\t\"successText\": \"SuccessText API_Test44@!@@##$%%&*79tt0\",\r\n\t\"secondLangSuccessText\":\"SecondLangSuccess TextAPI_Test44@tt790\",\r\n\t\"failureText\": \"Failure in Buying API_Test44@tt790\",\r\n\t\"secondLangFailureText\":\"SecondLangFailureText API_Testtt44@790\",\r\n\t\r\n\t\"productSMSCode\":\"8491 |CP75\",\r\n\t\"cpName\":\"CPTWO\",\r\n\t\"chargingType\":\"MO\",\r\n\t\"serviceMode\":\"Normal\",\r\n\t\"chargingDetails\":[\r\n\t\t{\r\n\t\t  \"amount\":\"30\",\r\n\t\t  \"chargeCode\":\"CC303\",\r\n\t\t  \"priority\":\"HIGH\",\r\n\t\t  \"operationType\":\"0\"\r\n\t\t}\r\n\t]\r\n}",
+			"url": "http://10.155.215.160:8380/cisCircle/api/product",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": ""
+				}
+			],
+			"collection_id": "d3d5fbb6-9df0-021f-9f16-70e69d5d2cca"
+		}
+	]
+}

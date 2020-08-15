@@ -1,0 +1,946 @@
+{
+	"info": {
+		"_postman_id": "06939a9f-5de2-4a51-8c49-ef9850177fb8",
+		"name": "PartnerManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "verifier_updatePartner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 93f7136e-1792-424b-bf97-d0b320550aa6"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"partnerId\":11,\n\"remarks\" : \"String value remark\" ,\n\"action\" : \"i\"}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/verifier/updatePartner/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"verifier",
+						"updatePartner",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SettlementReport_upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer c84d9483-95dc-4551-bc55-a379e9cc4d76"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/settlement/upload-settlement-report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"settlement",
+						"upload-settlement-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SettlementReport_validate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer aabcbda0-756b-4eac-87b0-238d857524cb"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"reportMonth\" : \"OCT\",\n\"reportYear\" : 2018,\n\"fileLocation\" : \"C:\\\\DST_Config\\\\partner_data\\\\temp\\\\SRCP_QUICKCELL_SEP_2018\\\\1540532205492\\\\SRCP_QUICKCELL_SEP_2018.csv\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/settlement/validateSettlementReport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"settlement",
+						"validateSettlementReport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SettlementReport_validate_add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer aabcbda0-756b-4eac-87b0-238d857524cb"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"reportMonth\" : \"SEP\",\n\"reportYear\" : 2018,\n\"fileLocation\" : \"C:\\\\DST_Config\\\\partner_data\\\\temp\\\\SRCP_QUICKCELL_SEP_2018\\\\1540532205492\\\\SRCP_QUICKCELL_SEP_2018.csv\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/settlement/validate-add-Settlement-Report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"settlement",
+						"validate-add-Settlement-Report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SettlementReport_partner_settlement_report",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer aabcbda0-756b-4eac-87b0-238d857524cb"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/settlement/partner-settlement-report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"settlement",
+						"partner-settlement-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SettlementReport_corporate_settlement_report",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer aabcbda0-756b-4eac-87b0-238d857524cb"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/settlement/partner-settlement-report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"settlement",
+						"partner-settlement-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_editPartnerDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 93f7136e-1792-424b-bf97-d0b320550aa6"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"partnerId\":1,\n\"emailID\":null,\n\"firstName\":\"\",\n\"lastName\":\"chanda\",\n\"phoneNumber\":null,\n\"mobileNumber\":123456732,\n\"address\":\"7A cybercity gurgaon\",\n\"pinCode\":\"67892\",\n\"settlementType\":\"PARTNER_BASED\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/admin/editPartnerDetail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"admin",
+						"editPartnerDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_validateEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 93f7136e-1792-424b-bf97-d0b320550aa6"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"partnerId\":1,\n\"emailID\":null,\n\"firstName\":\"\",\n\"lastName\":\"chanda\",\n\"phoneNumber\":null,\n\"mobileNumber\":123456732,\n\"address\":\"7A cybercity gurgaon\",\n\"pinCode\":\"67892\",\n\"settlementType\":\"PARTNER_BASED\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/admin/editPartnerDetail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"admin",
+						"editPartnerDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cisAPIAddCP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4= "
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cpName\":\"sanboxtestuser2\",\"integrationType\":\"smpp\",\"ipAddress\":\"127.0.0.1\",\"password\":\"kaushikkaushik\",\"port\":\"4567\",\"userName\":\"sanboxtestuser22\",\"otherIPAddress\":\"127.0.0.1,10.45.85.136,10.45.85.144\"}"
+				},
+				"url": {
+					"raw": "http://localhost:7380/cisCircle/api/addCP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7380",
+					"path": [
+						"cisCircle",
+						"api",
+						"addCP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cisAPIAddProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4= "
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"productName\": \"DSTSANDBOXTESTSERVICE84\",\r\n\t\"type\": \"SMS\",\r\n\t\"validityPeriod\": \"1\",\r\n\t\"validityUnit\": \"Hours\",\r\n\t\"loyaltyPoints\": \"73674\",\r\n\t\"isRecurring\": \"false\",\r\n\t\"successText\": \"\",\r\n\t\"secondLangSuccessText\": \"\",\r\n\t\"failureText\": \"\",\r\n\t\"secondLangFailureText\": \"\",\r\n\t\"productSMSCode\": \"263 |BC5\",\r\n\t\"productDisplayNameOnSMS\": \"DSTSANDBOXTESTSERVICE84\",\r\n\t\"secondLangProductDisplayNameOnSMS\": \"DSTSANDBOXTESTSERVICE84\",\r\n\t\"spSuccessIsSupress\": \"false\",\r\n\t\"spFailureIsSupress\": \"false\",\r\n\t\"description\": \"dst sandbox service\",\r\n\t\"serviceMode\": \"BROADCAST\",\r\n\t\"chargingType\": \"MO\",\r\n\t\"cpName\": \"parul1993\",\r\n\t\"expiryDate\": \"2/1/2019 00:00:00\",\r\n\t\"chargingDetails\": [{\r\n\t\t\"amount\": \"65.0\",\r\n\t\t\"chargeCode\": \"CHTESTDSTSB84\",\r\n\t\t\"priority\": \"HIGH\",\r\n\t\t\"operationType\": \"0\"\r\n\t}]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7380/cisCircle/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7380",
+					"path": [
+						"cisCircle",
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manaeUser_updateUserStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer b933f0b2-458d-4b32-965e-eb132c544ff7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\": 48,\n\"userStatus\": \"BLOCKED\"}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/manageUsers/updateUserStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"manageUsers",
+						"updateUserStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manaeUser_createUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer b933f0b2-458d-4b32-965e-eb132c544ff7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"aloha\",\"emailID\":\"aloha@ericsson.com\",\"firstName\":\"aloha\",\"lastName\":\"ericsson\",\"mobileNumber\":\"762389748934\",\"userRole\":[\"ROLE_CAPPROVER\"],\"requestType\":\"CREATE\"} "
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/manageUsers/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"manageUsers",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manaeUser_validateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer b933f0b2-458d-4b32-965e-eb132c544ff7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"aloha\",\"emailID\":\"aloha@ericsson.com\",\"firstName\":\"aloha\",\"lastName\":\"ericsson\",\"mobileNumber\":\"762389748934\",\"userRole\":[\"ROLE_CAPPROVER\"],\"requestType\":\"CREATE\"} \n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/manageUsers/validateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"manageUsers",
+						"validateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approver_updatePartner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 93e5da47-7831-4b69-9997-f2cd9d7db94a"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"partnerId\": 18,\n\"remarks\" : \"String value remark\" ,\n\"action\" : \"apprve\"}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/approver/updatePartner/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"approver",
+						"updatePartner",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer f6e59931-a657-42b7-b54d-2fd68b2684c0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":1,\n\t\"oldPassword\":\"Pass@12345\",\n\t\"newPassword\" : \"Pass@123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/changePassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePartnersByHierarchy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 07d72361-bd6e-4550-8256-91c34bac4293"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"partnerId\": 4, \n\t\"action\": \"ACTIVE\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/admin/updatePartnerStatusByHierarchy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"admin",
+						"updatePartnerStatusByHierarchy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer f6e59931-a657-42b7-b54d-2fd68b2684c0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":1,\n\t\"oldPassword\":\"Pass@12345\",\n\t\"newPassword\" : \"Pass@123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/changePassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ContentManager - searchContent",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 476f8164-24d2-47f0-abbe-90f9f625ee5a"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/contentManager/searchContentDetails?contentName=IPL&partnerId=&contentValidityFrom=&contentValidityTo=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"contentManager",
+						"searchContentDetails"
+					],
+					"query": [
+						{
+							"key": "contentName",
+							"value": "IPL"
+						},
+						{
+							"key": "partnerId",
+							"value": ""
+						},
+						{
+							"key": "contentValidityFrom",
+							"value": ""
+						},
+						{
+							"key": "contentValidityTo",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ContentManager -addContent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 54cce777-dda8-4e82-a334-d05e6ff3bdb2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"partnerId\":11,\r\n\t\"contentName\":\"IPL GAME 2018 CWG-1234\",\r\n\t\"contentValidityFrom\" : \"2018-09-06T18:30:00.000Z\",\r\n\t\"contentValidityTo\" : \"2018-09-10T18:30:00.000Z\",\r\n\t\"contentDescription\" : \"description we give\",\r\n\t\"contentBuildDetailsFormList\" : [{\"fileLocation\" : \"C:\\\\DST_Config\\\\partner_data\\\\temp\\\\Chrysanthemum\\\\1534919871216\\\\Chrysanthemum.jpg\",\r\n\t\"buildName\" : \"IPL GAME 2018 CWG IOS\", \r\n\t\"description\" : \"build decription ios build\",\r\n\t\t \"uploadBuildFile\": \"C:\\\\fakepath\\\\Degree.pdf\",\r\n      \"uploadSuccessMessage\": \"Document Uploaded ScuccessFully\"\r\n\t}]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/contentManager/addContentDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"contentManager",
+						"addContentDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contract-uploadcontract",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 54cce777-dda8-4e82-a334-d05e6ff3bdb2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"partnerId\":11,\r\n\t\"contentName\":\"IPL GAME 2018 CWG-1234\",\r\n\t\"contentValidityFrom\" : \"2018-09-06T18:30:00.000Z\",\r\n\t\"contentValidityTo\" : \"2018-09-10T18:30:00.000Z\",\r\n\t\"contentDescription\" : \"description we give\",\r\n\t\"contentBuildDetailsFormList\" : [{\"fileLocation\" : \"C:\\\\DST_Config\\\\partner_data\\\\temp\\\\Chrysanthemum\\\\1534919871216\\\\Chrysanthemum.jpg\",\r\n\t\"buildName\" : \"IPL GAME 2018 CWG IOS\", \r\n\t\"description\" : \"build decription ios build\",\r\n\t\t \"uploadBuildFile\": \"C:\\\\fakepath\\\\Degree.pdf\",\r\n      \"uploadSuccessMessage\": \"Document Uploaded ScuccessFully\"\r\n\t}]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/partner/contract-document",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"partner",
+						"contract-document"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contract-addContract",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 54cce777-dda8-4e82-a334-d05e6ff3bdb2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"partnerId\":11,\r\n\t\"fileLocation\":\"C:\\\\DST_Config\\\\partner_data\\\\temp\\\\DST Brunie Project Plan 7Sep18\\\\1543900117852\\\\DST Brunie Project Plan 7Sep18.pdf\",\r\n\t\"contextURL\" : \"\",\r\n\t\"protocol\" : \"SMPP\",\r\n\t\"ipAddress\" : \"127.0.0.1\",\r\n\t\"shortcode\" : \"321\",\r\n\t\"optionalIPAddress\" : \"10.84.34.123,10.27.23.23\", \r\n\t\"contentType\" : [\"SMPP\"]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/partner/contract",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"partner",
+						"contract"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VerifyService",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 54cce777-dda8-4e82-a334-d05e6ff3bdb2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"partnerId\":11,\r\n\t\"contentName\":\"IPL GAME 2018 CWG-1234\",\r\n\t\"contentValidityFrom\" : \"2018-09-06T18:30:00.000Z\",\r\n\t\"contentValidityTo\" : \"2018-09-10T18:30:00.000Z\",\r\n\t\"contentDescription\" : \"description we give\",\r\n\t\"contentBuildDetailsFormList\" : [{\"fileLocation\" : \"C:\\\\DST_Config\\\\partner_data\\\\temp\\\\Chrysanthemum\\\\1534919871216\\\\Chrysanthemum.jpg\",\r\n\t\"buildName\" : \"IPL GAME 2018 CWG IOS\", \r\n\t\"description\" : \"build decription ios build\",\r\n\t\t \"uploadBuildFile\": \"C:\\\\fakepath\\\\Degree.pdf\",\r\n      \"uploadSuccessMessage\": \"Document Uploaded ScuccessFully\"\r\n\t}]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/partner/contract-document",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"partner",
+						"contract-document"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ContentManager -download build",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 177328f8-b689-40ec-9a28-7426e8e5102d"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/contentManager/download-content-build?contentBuildId=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"contentManager",
+						"download-content-build"
+					],
+					"query": [
+						{
+							"key": "contentBuildId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ContentManager - contentProviders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer e8f463e4-6daa-4f09-964f-161d726810cb"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/contentManager/contentProviders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"contentManager",
+						"contentProviders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oauth toke",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic c3ByaW5nLXNlY3VyaXR5LW9hdXRoMi1yZWFkLXdyaXRlLWNsaWVudDpzcHJpbmctc2VjdXJpdHktb2F1dGgyLXJlYWQtd3JpdGUtY2xpZW50LXBhc3N3b3JkMTIzNA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"grant_type\":\"password\",\n\"client_id\":\"spring-security-oauth2-read-write-client\",\n\"username\":\"admin\",\n\"password\":\"Pass@12345\",\n\"user_type\":\"Corporate\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allValidPartners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup_validate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer "
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"gouravgarg\",\"partnerEmailId\":\"gourav.garg@ericsson.com\",\"firstName\":\"Gourav\",\"lastName\":\"Garg\",\"mobileNumber\":\"82378947499\",\"phoneNumber\":\"782368347389\",\"companyName\":\"EGI\",\"address\":\"gwalpahari hdiodj\",\"companyImage\":\"C:\\\\DST_Config\\\\partner_data\\\\temp\\\\POI1_100003_12212160034535A\\\\1536904014103/POI1_100003_12212160034535A.png\",\"captcha\":\"k4kc8\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pms-web/partner/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pms-web",
+						"partner",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
